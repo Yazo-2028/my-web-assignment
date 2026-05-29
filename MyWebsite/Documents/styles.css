@@ -1,12 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #fff8f0;
+    background: linear-gradient(to bottom, #fff8f0, #ffe0cc);
+    line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #8B4513;
+    background: linear-gradient(to right, #8B4513, #c97b36);
     color: white;
     text-align: center;
     padding: 25px;
@@ -19,9 +20,12 @@ header p {
 
 /* Navigation */
 nav {
-    background-color: #d2691e;
+    background: linear-gradient(to right, #d2691e, #ff9f43);
     padding: 15px;
     text-align: center;
+}
+nav{
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 nav a {
@@ -122,17 +126,18 @@ input, textarea {
 }
 
 button {
-    background-color: #8B4513;
+    background-color: #ff9f43;
     color: white;
-    padding: 10px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 button:hover {
-    background-color: #d2691e;
+    background-color: #e67e22;
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -176,4 +181,158 @@ footer {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-us{
+     display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.about-us div{
+     flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Main Content Box */
+.main-content{
+    width: 85%;
+    margin: 40px auto;
+    padding: 40px;
+    background: linear-gradient(to right, #5c3b2e, #b5651d);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    border: 2px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(3px);
+}
+
+/* Paragraph spacing */
+p{
+    line-height: 1.7;
+}
+
+/* Images */
+img{
+    border-radius: 12px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+/* Image hover effect */
+img:hover{
+    transform: scale(1.05);
+}
+
+/* Headings */
+h1, h2, h3{
+    letter-spacing: 1px;
+}
+h1{
+    color: #fff5e6;
+}
+h2{
+    color: #8B4513;
+}
+
+/* Section spacing */
+section{
+    margin-bottom: 50px;
+}
+
+/* Footer */
+footer{
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Navigation hover glow */
+nav a:hover{
+    color: #ffe4c4;
+    text-shadow: 0 0 5px white;
+}
+
+.about-section{
+    background-color: white;
+    padding: 30px;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-section h2{
+    color: #8B4513;
+    margin-bottom: 15px;
+}
+
+.about-section p{
+    color: #444;
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    width: 90%;
+}
+
+.feature-card{
+    background: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.feature-card:hover{
+    transform: translateY(-8px);
+}
+
+.feature-card h2{
+    color: #8B4513;
+}
+
+.feature-card p{
+    color: #555;
+}
+
+.testimonials{
+    text-align: center;
+    margin: 60px auto;
+    width: 80%;
+}
+
+.testimonial-box{
+    background-color: #fff;
+    padding: 25px;
+    margin: 20px;
+    border-left: 6px solid #d2691e;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.banner{
+    background-color: #ffcc99;
+    text-align: center;
+    padding: 15px;
+    color: #5c3b2e;
+    font-weight: bold;
+}
+
+section{
+    padding: 20px 0;
 }
