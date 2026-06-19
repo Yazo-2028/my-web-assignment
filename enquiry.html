@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Minoras Bakery</title>
-        <link rel="stylesheet" href="styles.css">
+        <title>Minoras Bakery | Fresh Bread, Cakes and Pastries</title>
+
+            <meta charset="UTF-8">
+
+            <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+            <meta name="description"
+            content="Minoras Bakery offers fresh bread, cakes, pastries and milkshakes in Johannesburg.">
+
+            <meta name="keywords"
+            content="Bakery, Bread, Cakes, Pastries, Milkshakes, Johannesburg">
+
+            <meta name="author"
+            content="Imtiyaaz Wade">
+
+            <link rel="stylesheet"
+            href="styles.css">
+
     </head>
     <body>
         <header>
@@ -16,8 +33,21 @@
             <a href="contact.html">Contact</a>
         </nav>
         <main>
+            <h2>Frequently Asked Questions</h2>
+            <button class="accordion">Do you make custom cakes?</button>
+            <div class="panel">
+                <p>Yes, we create custom cakes for birthdays, weddings and special events.</p>
+            </div>
+            <button class="accordion">How far in advance should I place an order?</button>
+            <div class="panel">
+                <p>We recommend placing orders at least 48 hours in advance.</p>
+            </div>
+            <button class="accordion">Do you offer delivery?</button>
+            <div class="panel">
+                <p>Yes, delivery is available within selected areas of Johannesburg.</p>
+            </div>
             <h2>Make an enquiry</h2>
-            <form>
+            <form id="enquiryForm">
                 <input type="text" placeholder="Your Name" required><br><br>
                 <input type="email" placeholder="Your Email" required><br><br>
                 <textarea placeholder="Your Message" rows="5" required></textarea><br><br>
@@ -25,5 +55,6 @@
             </form>
         </main>
         <footer> &copy;ST10532626</footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
