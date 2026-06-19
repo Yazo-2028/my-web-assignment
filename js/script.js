@@ -66,3 +66,32 @@ if (promoBtn && promoModal && closeModal) {
         promoModal.style.display = "none";
     });
 }
+
+const enquiryForm = document.getElementById("enquiryForm");
+
+if (enquiryForm) {
+
+    enquiryForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            body: JSON.stringify({
+                name: document.querySelector('input[type="text"]').value,
+                email: document.querySelector('input[type="email"]').value,
+                message: document.querySelector("textarea").value
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("responseMessage").innerHTML =
+                "Enquiry submitted successfully!";
+        });
+
+    });
+
+}
